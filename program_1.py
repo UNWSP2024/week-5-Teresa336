@@ -1,4 +1,7 @@
-# Program #1: Kilometer Converter
+# Programmer: Teresa Fischer
+# Date: 9/30/24
+# Title: Program #1: Kilometer Converter
+
 # Write a program that asks the user to enter a distance in kilometers, 
 # then converts that distance to miles.  The conversion formula is as follows:  
 # Miles = kilometers x 0.6214.   
@@ -8,7 +11,8 @@
 def kilometer_conversion(kilometers):    
     miles = 0.0
     ######################
-    # WRITE YOUR CODE HERE
+    kilometers = int(input('Enter a distance in kilometers:'))
+    miles = kilometers * 0.6214
     ######################    
 
 
@@ -22,5 +26,7 @@ if __name__ == '__main__':
     # Get User Input
     print('in main')
     # Call kilometer_conversion
-    
+    result = kilometer_conversion('number')
+
     # Display the miles
+    print('That is', result, 'miles!')
